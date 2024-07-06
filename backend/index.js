@@ -1,6 +1,6 @@
 dotenv.config();
 import express from 'express'
-import connecDB from '../database/index.js'
+import connecDB from './database/index.js'
 import cookieParser from 'cookie-parser'
 import dotenv from 'dotenv';
 import cors from  "cors";
@@ -13,8 +13,8 @@ app.use(express.urlencoded({extended:true,limit:"16kb"}));
 app.use(cookieParser());
 app.use(cors())
 
-import useAuthRouter from '../routes/auth.routes.js'
-import useNotesRouter from '../routes/notes.routes.js';
+import useAuthRouter from './routes/auth.routes.js'
+import useNotesRouter from './routes/notes.routes.js';
 
 app.use('/api/auth',useAuthRouter)
 app.use('/api/notes',useNotesRouter)
