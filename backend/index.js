@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:true,limit:"16kb"}));
 app.use(cookieParser());
 app.use(cors(
   {
-    origin: ["https://vercel.com/ksb44s-projects/i-notebook-tmak"],
+    origin: ["https://i-notebook-u78v.vercel.app"],
     credentials: true,
   }
 ))
