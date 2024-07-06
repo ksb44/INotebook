@@ -10,7 +10,7 @@ function Signup() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://i-notebook-tmak.vercel.app/api/auth/register", {
+    const response = await fetch("https://backend-inote-50l6.onrender.com/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
