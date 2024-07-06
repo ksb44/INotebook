@@ -7,7 +7,7 @@ const NoteStateProvider = (props) => {
 
     const getNotes = async () => {
         try {
-            const response = await fetch("https://i-notebook-tmak.vercel.app/api/notes/fetchAllNotes", {
+            const response = await fetch("https://backend-inote-50l6.onrender.com/api/notes/fetchAllNotes", {
                 method: "GET",
                 headers: {
                     'Content-Type': 'application/json',
@@ -26,7 +26,7 @@ const NoteStateProvider = (props) => {
 
     const addNote = async (note) => {
         try {
-            const response = await fetch("https://i-notebook-tmak.vercel.app/api/notes/addNotes", {
+            const response = await fetch("https://backend-inote-50l6.onrender.com/api/notes/addNotes", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
@@ -46,7 +46,7 @@ const NoteStateProvider = (props) => {
 
     const deleteNote = async (id) => {
         try {
-            const response = await fetch(`https://i-notebook-tmak.vercel.app/api/notes/deleteNote/${id}`, {
+            const response = await fetch(`https://backend-inote-50l6.onrender.com/api/notes/deleteNote/${id}`, {
                 method: "DELETE",
                 headers: {
                     'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const NoteStateProvider = (props) => {
 
     const editNote = async (id, title, description, tag) => {
         try {
-            const response = await fetch(`https://i-notebook-tmak.vercel.app/api/notes/updateNote/${id}`, {
+            const response = await fetch(`https://backend-inote-50l6.onrender.com/api/notes/updateNote/${id}`, {
                 method: "PUT",
                 headers: {
                     'Content-Type': 'application/json',
