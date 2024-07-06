@@ -1,4 +1,4 @@
-dotenv.config();
+//dotenv.config();
 import express from 'express'
 import connecDB from './database/index.js'
 import cookieParser from 'cookie-parser'
