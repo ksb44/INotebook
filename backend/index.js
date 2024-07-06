@@ -11,7 +11,12 @@ connecDB()
 app.use(express.json({limit:'20kb'}))
 app.use(express.urlencoded({extended:true,limit:"16kb"}));
 app.use(cookieParser());
-app.use(cors())
+app.use(cors(
+  {
+    origin: ["https://vercel.com/ksb44s-projects/i-notebook-tmak"],
+    credentials: true,
+  }
+))
 
 import useAuthRouter from './routes/auth.routes.js'
 import useNotesRouter from './routes/notes.routes.js';
