@@ -11,7 +11,11 @@ connecDB()
 app.use(express.json({limit:'20kb'}))
 app.use(express.urlencoded({extended:true,limit:"16kb"}));
 app.use(cookieParser());
-app.use(cors())
+app.use(cors({
+  origin: 'https://i-notebook-u78v.vercel.app',
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}))
 
 import useAuthRouter from './routes/auth.routes.js'
 import useNotesRouter from './routes/notes.routes.js';
