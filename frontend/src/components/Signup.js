@@ -10,7 +10,7 @@ function Signup() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8000/api/auth/register", {
+    const response = await fetch("https://vercel.com/ksb44s-projects/i-notebook-tmak/api/auth/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
