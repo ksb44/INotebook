@@ -6,7 +6,8 @@ function Login() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://vercel.com/ksb44s-projects/i-notebook-tmak/api/auth/login", {
+ 
+    const response = await fetch("https://i-notebook-tmak.vercel.app/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
