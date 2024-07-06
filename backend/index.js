@@ -11,11 +11,7 @@ connecDB()
 app.use(express.json({limit:'20kb'}))
 app.use(express.urlencoded({extended:true,limit:"16kb"}));
 app.use(cookieParser());
-app.use(cors({
-  origin: '*',
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type'],
-}))
+app.use(cors())
 
 import useAuthRouter from './routes/auth.routes.js'
 import useNotesRouter from './routes/notes.routes.js';
