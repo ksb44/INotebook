@@ -12,7 +12,7 @@ function Notes() {
     } else {
       window.location.href = "/login";
     }
-  }, [getNotes]);
+  }, []);
 
   const [note, setNote] = useState({ etitle: "", edescription: "", etag: "" });
 
